@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>SYNAPSE 2026 — Connecting Ideas. Igniting Leaders.</title>
+<style>
+:root{--bg:#080909;--panel:#111414;--panel2:#151919;--red:#ff2634;--red2:#c90f20;--text:#f7f7f7;--muted:#a8adad;--line:#292e2e;--green:#1fca82;--amber:#ffbd3e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#26090d 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}button,input,select,textarea{font:inherit}button,a{transition:.2s ease}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}.topbar{height:76px;border-bottom:1px solid #242727;background:#090a0aeb;position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font-size:22px;font-weight:850;letter-spacing:-1px;white-space:nowrap}.brand b{color:var(--red)}.brand-mark{color:var(--red);font-size:26px;margin-right:4px}.navlinks{display:flex;align-items:center;gap:8px}.navlinks a{color:#c8cccc;padding:10px 13px;border-radius:8px;font-size:13px;font-weight:650}.navlinks a:hover,.navlinks a.active{color:#fff;background:#211012}.navlinks a.active{box-shadow:inset 0 -2px var(--red)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:8px;border:1px solid transparent;background:var(--red);color:white;font-weight:750;font-size:14px;cursor:pointer}.btn:hover{background:#e51627;transform:translateY(-1px)}.btn.secondary{background:transparent;border-color:#555d5d}.btn.secondary:hover{border-color:var(--red);background:#1b0c0e}.btn.small{padding:9px 13px;font-size:12px}.menu-toggle{display:none;background:transparent;color:white;border:1px solid var(--line);border-radius:8px;padding:8px 11px}.page{display:none;min-height:calc(100vh - 150px);padding:42px 0 72px;animation:fade .22s ease}.page.active{display:block}@keyframes fade{from{opacity:.45;transform:translateY(4px)}to{opacity:1;transform:none}}.hero{min-height:490px;border:1px solid #342426;border-radius:16px;overflow:hidden;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(5,6,6,.98) 0%,rgba(7,7,7,.84) 45%,rgba(8,8,8,.3) 100%),radial-gradient(ellipse at 75% 40%,#5c111a 0,#23090d 25%,#090909 58%);padding:clamp(28px,6vw,72px)}.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 70px,rgba(255,38,52,.045) 71px 72px);pointer-events:none}.hero-content{position:relative;max-width:720px}.eyebrow{color:#ff6670;font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(48px,8vw,96px);line-height:.95;letter-spacing:-5px;margin:20px 0 18px;font-weight:900}.hero h1 span{color:var(--red)}.tagline{font-size:clamp(12px,1.5vw,17px);letter-spacing:clamp(2px,.6vw,6px);font-weight:700}.lead{color:#c0c5c5;line-height:1.75;max-width:580px;font-size:16px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.stat{padding:19px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(135deg,#111414,#0b0d0d)}.stat strong{display:block;font-size:19px;margin-bottom:5px}.stat span{font-size:12px;color:var(--muted)}.section-head{margin-bottom:26px}.section-head h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.5px;margin:8px 0 10px}.section-head p{color:var(--muted);line-height:1.7;max-width:690px;margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{border:1px solid var(--line);border-radius:13px;padding:23px;background:linear-gradient(145deg,#131616,#0c0e0e)}.icon{width:42px;height:42px;border-radius:11px;background:#2a1013;color:var(--red);display:grid;place-items:center;font-size:22px;margin-bottom:15px}.card h3{margin:0 0 8px;font-size:18px}.card p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.round-number{color:var(--red);font-size:13px;font-weight:900;letter-spacing:2px;margin-bottom:10px}.feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:24px}.feature{display:flex;gap:13px;align-items:flex-start;padding:17px;border:1px solid var(--line);border-radius:11px;background:#101212}.feature .icon{flex-shrink:0;margin:0;width:38px;height:38px}.feature strong{display:block;margin:1px 0 5px;font-size:14px}.feature span{color:var(--muted);font-size:12px;line-height:1.5}.form-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.8fr);gap:18px;align-items:start}.form-card{border:1px solid var(--line);border-radius:14px;padding:clamp(18px,3vw,30px);background:#101212}.form-card h3{margin:0 0 5px}.form-card>p{color:var(--muted);font-size:13px;margin:0 0 22px;line-height:1.6}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:750;color:#d9dddd}.field label em{color:var(--red);font-style:normal}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #343a3a;border-radius:7px;background:#090b0b;color:#f7f7f7;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px #ff26341c}.field input::placeholder,.field textarea::placeholder{color:#6e7575}.radio-row{display:flex;gap:18px;flex-wrap:wrap;padding:8px 0}.radio-row label{display:flex;align-items:center;gap:8px;font-weight:500}.radio-row input{accent-color:var(--red)}.divider{border:0;border-top:1px solid var(--line);margin:23px 0}.hint{font-size:12px;color:var(--muted);line-height:1.65}.notice{padding:14px;border-radius:9px;background:#201012;border:1px solid #4d1a20;color:#e7c4c7;font-size:12px;line-height:1.6}.notice strong{color:white}.form-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:22px}.status-pill{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:30px;background:#103024;color:#75edb8;font-size:11px;font-weight:800}.status-pill.wait{background:#332710;color:#ffd16c}.ticket{border:1px dashed #575d5d;border-radius:14px;padding:22px;background:linear-gradient(100deg,#151919,#0c0e0e);position:relative;overflow:hidden}.ticket:after{content:"S";position:absolute;right:8px;top:-35px;font-size:180px;font-weight:900;color:#ff263408;pointer-events:none}.ticket-brand{font-size:18px;font-weight:900;margin-bottom:20px}.ticket-qr{float:right;display:flex;flex-direction:column;align-items:center;gap:6px;margin:0 0 12px 14px;position:relative;z-index:1}.ticket-qr img{display:block;background:#fff;padding:5px;border-radius:5px}.qr-code{display:grid;place-items:center;background:#fff;padding:5px;border-radius:5px;min-width:124px;min-height:124px}.qr-code img{max-width:124px;max-height:124px}.ticket-qr span{font-size:10px;color:var(--muted);text-align:center;max-width:124px}.ticket:after{pointer-events:none}.ticket-brand span{color:var(--red)}.ticket-row{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}.ticket-row:last-child{border:0}.ticket-row small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.ticket-row strong{font-size:13px;overflow-wrap:anywhere}.queue-number{font-size:60px;font-weight:900;color:var(--red);letter-spacing:-3px;line-height:1.2}.progress{height:7px;background:#2a2e2e;border-radius:9px;overflow:hidden;margin:12px 0}.progress span{display:block;height:100%;background:var(--red);width:0;transition:width .3s}.empty-state{text-align:center;padding:42px 18px;border:1px dashed #373c3c;border-radius:12px;color:var(--muted)}.empty-state .icon{margin:0 auto 14px}.admin-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}.admin-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.metric{padding:18px;border:1px solid var(--line);border-radius:11px;background:#111414}.metric span{font-size:12px;color:var(--muted)}.metric strong{display:block;font-size:28px;margin-top:8px}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px}table{width:100%;border-collapse:collapse;min-width:680px;font-size:12px}th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line)}th{color:#aeb4b4;background:#151818;font-size:11px;text-transform:uppercase;letter-spacing:.7px}td{color:#e2e5e5}tr:last-child td{border-bottom:0}.table-empty{text-align:center;color:var(--muted);padding:28px}footer{border-top:1px solid #252929;padding:26px 0;color:#8e9595;font-size:12px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.footer-links{display:flex;gap:16px}.footer-links a:hover{color:white}.toast{position:fixed;right:20px;bottom:20px;z-index:30;max-width:min(400px,calc(100% - 40px));padding:15px 18px;border-radius:10px;background:#17211c;border:1px solid #28583e;color:#d8ffea;box-shadow:0 15px 50px #0008;display:none;font-size:13px}.toast.show{display:block;animation:fade .2s ease}.toast.error{background:#281113;border-color:#70232a;color:#ffdadd}.hidden{display:none!important}.admin-link{opacity:.65;font-size:11px}
+@media(max-width:800px){.navlinks{gap:1px}.navlinks a{padding:9px 8px;font-size:12px}.brand{font-size:19px}.form-layout{grid-template-columns:1fr}.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-metrics{grid-template-columns:repeat(2,1fr)}.hero{min-height:430px}.hero h1{letter-spacing:-3px}}
+@media(max-width:600px){.topbar{height:66px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:#0b0d0d;border-bottom:1px solid var(--line);padding:12px 18px 18px;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:13px}.wrap{width:calc(100% - 28px)}.page{padding:28px 0 50px}.hero{padding:27px 22px;min-height:460px}.hero h1{font-size:53px}.lead{font-size:14px}.stats,.grid,.grid.three,.feature-list{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.admin-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric strong{font-size:24px}.ticket-row{gap:10px}.footer-inner{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="SYNAPSE home"><span class="brand-mark">⟨S⟩</span>SYNAPSE <b>2026</b></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="navlinks" id="navlinks">
+      <a href="#home" data-page="home">Home</a><a href="#about" data-page="about">About</a><a href="#event" data-page="event">Event</a><a href="#register" data-page="register">Register</a><a href="#contact" data-page="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="page active" id="home">
+    <div class="hero"><div class="hero-content">
+      <div class="eyebrow">Ideas meet impact</div>
+      <h1>SYNAPSE <span>2026</span></h1>
+      <div class="tagline">CONNECTING IDEAS. IGNITING LEADERS.</div>
+      <p class="lead">A corporate strategy and innovation fest designed for BTech students across all years. Bring your ideas, challenge your thinking, and experience the real world of business and innovation.</p>
+      <div class="hero-actions"><a class="btn" href="#register">Register your team <span>→</span></a><a class="btn secondary" href="#about">Discover SYNAPSE</a></div>
+    </div></div>
+    <div class="stats">
+      <div class="stat"><strong>2–3 Members</strong><span>Team registration</span></div>
+      <div class="stat"><strong>3 Rounds</strong><span>Pitch, analyse, technobuild</span></div>
+      <div class="stat"><strong>All BTech Years</strong><span>GCET students</span></div>
+    </div>
+    <div class="section-head" style="margin-top:48px"><div class="eyebrow">The experience</div><h2>Think bigger. Solve smarter.</h2><p>Step into real-world business challenges, work as a team, and turn creative thinking into actionable strategy.</p></div>
+    <div class="grid three">
+      <article class="card"><div class="icon">◎</div><h3>Startup Pitching</h3><p>Shape an idea, build a case, and pitch it with confidence.</p></article>
+      <article class="card"><div class="icon">⌁</div><h3>Strategic Thinking</h3><p>Explore business problems and make decisions under pressure.</p></article>
+      <article class="card"><div class="icon">↗</div><h3>Real-World Impact</h3><p>Collaborate, adapt, and discover new ways to lead.</p></article>
+    </div>
+  </section>
+
+  <section class="page" id="about">
+    <div class="section-head"><div class="eyebrow">Our purpose</div><h2>About SYNAPSE 2026</h2><p>SYNAPSE brings together curious minds for a practical, team-based experience in corporate strategy and innovation. The goal is to challenge assumptions, spark creativity, and give students a taste of real-world business thinking.</p></div>
+    <div class="feature-list">
+      <div class="feature"><div class="icon">⌂</div><div><strong>Student focused</strong><span>Open to BTech students of all years at GCET.</span></div></div>
+      <div class="feature"><div class="icon">♟</div><div><strong>Team based</strong><span>Register as a team of 2 or 3 members.</span></div></div>
+      <div class="feature"><div class="icon">✦</div><div><strong>Learn by doing</strong><span>Apply creative ideas to practical business situations.</span></div></div>
+      <div class="feature"><div class="icon">↗</div><div><strong>Innovation & growth</strong><span>Build communication, analysis, and leadership skills.</span></div></div>
+    </div>
+    <div class="card" style="margin-top:18px"><div class="eyebrow">The motto</div><h3 style="font-size:25px;margin-top:12px">Connecting Ideas. Igniting Leaders.</h3><p>Every idea can spark a better question. Every challenge can reveal a new leader. SYNAPSE is where both begin.</p></div>
+  </section>
+
+  <section class="page" id="event">
+    <div class="section-head"><div class="eyebrow">Event overview</div><h2>Three rounds. Ideas into action.</h2><p>SYNAPSE is a three-round corporate strategy and innovation fest where teams pitch, analyse business challenges, and build a proof of concept through a basic prototype. Event date and venue will be announced later.</p></div>
+    <div class="grid">
+      <article class="card"><div class="round-number">ROUND 01</div><div class="icon">↗</div><h3>Founder's Arena</h3><p>Startup pitching and idea evaluation. Teams present their thinking and make their case in the elimination round.</p></article>
+      <article class="card"><div class="round-number">ROUND 02</div><div class="icon">▥</div><h3>Corporate Autopsy</h3><p>Revive a failed company through strategic thinking. Analyse what went wrong and propose a path forward.</p></article>
+      <article class="card"><div class="round-number">ROUND 03</div><div class="icon">⌘</div><h3>Technobuild</h3><p>Turn your company concept into a proof of concept. Define the core idea and build a basic working prototype, such as a simple website, to demonstrate how it could work.</p></article>
+    </div>
+    <div class="section-head" style="margin-top:34px"><h2 style="font-size:26px">Who can participate?</h2></div>
+    <div class="grid three">
+      <article class="card"><div class="icon">♙</div><h3>Eligibility</h3><p>BTech students from all years of Geethanjali College of Engineering and Technology.</p></article>
+      <article class="card"><div class="icon">♟</div><h3>Team size</h3><p>Minimum 2 and maximum 3 members per team.</p></article>
+      <article class="card"><div class="icon">✓</div><h3>Registration</h3><p>No registration fee. First 100 tickets are allocated; later registrations enter the FIFO waiting list.</p></article>
+    </div>
+    <div class="hero-actions"><a class="btn" href="#register">Register your team →</a></div>
+  </section>
+
+  <section class="page" id="register">
+    <div class="section-head"><div class="eyebrow">Join the experience</div><h2>Team registration</h2><p>Enter your team details below. No account or login is required. Please check roll numbers and contact details before submitting.</p></div>
+    <div class="form-layout">
+      <form id="registrationForm" class="form-card">
+        <h3>Team details</h3><p>Fields marked <span style="color:var(--red)">*</span> are required.</p>
+        <div class="form-grid">
+          <div class="field full"><label for="teamName">Team name <em>*</em></label><input id="teamName" name="teamName" required maxlength="60" placeholder="e.g. The Innovators"></div>
+          <div class="field full"><label>Team size <em>*</em></label><div class="radio-row"><label><input type="radio" name="teamSize" value="2" checked> 2 members</label><label><input type="radio" name="teamSize" value="3"> 3 members</label></div></div>
+        </div>
+        <hr class="divider">
+        <h3>Team leader</h3><p>We will use the leader's contact details for registration updates.</p>
+        <div class="form-grid">
+          <div class="field"><label for="leaderName">Full name <em>*</em></label><input id="leaderName" required maxlength="80" placeholder="Team leader's name"></div>
+          <div class="field"><label for="leaderRoll">Roll number <em>*</em></label><input id="leaderRoll" required maxlength="30" placeholder="College roll number"></div>
+          <div class="field"><label for="leaderEmail">Email address <em>*</em></label><input id="leaderEmail" type="email" required maxlength="100" placeholder="name@example.com"></div>
+          <div class="field"><label for="leaderPhone">Phone number <em>*</em></label><input id="leaderPhone" type="tel" required pattern="[0-9+() -]{10,18}" maxlength="18" placeholder="Contact number"></div>
+        </div>
+        <hr class="divider">
+        <h3>Team members</h3><p>Open to eligible BTech students from all academic years.</p>
+        <div class="form-grid">
+          <div class="field"><label for="member2Name">Member 2 — full name <em>*</em></label><input id="member2Name" required maxlength="80" placeholder="Full name"></div>
+          <div class="field"><label for="member2Roll">Member 2 — roll number <em>*</em></label><input id="member2Roll" required maxlength="30" placeholder="Roll number"></div>
+          <div class="field full hidden" id="member3Fields"><label for="member3Name">Member 3 — full name <em>*</em></label><input id="member3Name" maxlength="80" placeholder="Full name"><label for="member3Roll" style="margin-top:4px">Member 3 — roll number <em>*</em></label><input id="member3Roll" maxlength="30" placeholder="Roll number"></div>
+          <div class="field full"><label class="radio-row" style="gap:9px"><input type="checkbox" id="eligibility" required> I confirm that all team members are BTech students of GCET.</label></div>
+        </div>
+        <div class="notice">Registration is free. If all 100 tickets are allocated, your team joins the FIFO waiting queue. Please wait for further notice. Please keep your registration ID after submitting.</div>
+        <div class="form-actions"><button class="btn" type="submit">Submit registration →</button><button class="btn secondary" type="reset">Clear form</button></div>
+      </form>
+      <aside>
+        <div class="form-card"><div class="eyebrow">Before you submit</div><h3 style="margin-top:10px">Registration guidelines</h3><div class="feature-list" style="grid-template-columns:1fr">
+          <div class="feature"><div class="icon">✓</div><div><strong>All BTech years</strong><span>All team members must be BTech students of GCET, from any year.</span></div></div>
+          <div class="feature"><div class="icon">♟</div><div><strong>2–3 students</strong><span>One leader plus one or two team members.</span></div></div>
+          <div class="feature"><div class="icon">↻</div><div><strong>Fair allocation</strong><span>When a registered team cancels, the first eligible waiting team gets the released seats.</span></div></div>
+        </div></div>
+        <div class="notice" style="margin-top:14px">Registrations are saved in this browser on this device for demonstration. Google Sheets integration can be added later. Real email/SMS notifications are not connected yet.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="page" id="confirmation">
+    <div class="section-head"><div class="eyebrow">Registration update</div><h2 id="confirmationTitle">Registration received</h2><p id="confirmationText">Your registration details are below.</p></div>
+    <div id="confirmationContent"></div>
+    <div class="hero-actions"><a class="btn" href="#my-registration">View my registration →</a><a class="btn secondary" href="#home">Back to home</a></div>
+  </section>
+
+  <section class="page" id="waiting">
+    <div class="section-head"><div class="eyebrow">Queue status</div><h2>Waiting list</h2><p>Your team is in the queue. When a confirmed team cancels, its released ticket is offered to the earliest team in the FIFO waiting queue.</p></div>
+    <div id="waitingContent"></div>
+    <div class="hero-actions"><a class="btn secondary" href="#my-registration">View my registration</a><a class="btn secondary" href="#home">Back to home</a></div>
+  </section>
+
+  <section class="page" id="my-registration">
+    <div class="section-head"><div class="eyebrow">Your details</div><h2>My registration</h2><p>Look up your team using the registration ID you received after submitting.</p></div>
+    <div class="form-card" style="max-width:650px;margin-bottom:18px"><form id="lookupForm" class="form-grid"><div class="field full"><label for="lookupId">Registration ID</label><input id="lookupId" required placeholder="e.g. SYN26-0001"></div><div class="field full"><button class="btn" type="submit">Find registration →</button></div></form></div>
+    <div id="lookupResult"></div>
+  </section>
+
+  <section class="page" id="contact">
+    <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Contact the team</h2><p>Questions about eligibility, registration, or the event? Use the contact details supplied by your organising team.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">✉</div><h3>Event enquiries</h3><p>The official organiser email and phone number can be added here once confirmed.</p></article>
+      <article class="card"><div class="icon">⌖</div><h3>Venue & date</h3><p>Event date and venue details will be announced soon. Check back for updates.</p></article>
+    </div>
+    <div class="card" style="margin-top:16px"><h3>Registration help</h3><p>For a registration issue, keep your registration ID and the team leader's roll number handy when contacting the organisers.</p><div class="hero-actions"><a class="btn" href="#register">Register your team</a><a class="btn secondary" href="#event">Explore the event</a></div></div>
+  </section>
+
+  <section class="page" id="admin">
+    <div class="admin-top"><div><div class="eyebrow">Project management view</div><h2 style="margin:8px 0 0">Registration dashboard</h2></div><div class="form-actions" style="margin:0"><button class="btn secondary small" id="exportCsv">Export CSV</button><button class="btn secondary small" id="resetDemo">Reset demo data</button></div></div>
+    <p class="hint" style="margin-bottom:20px">Demo admin view. Data is stored locally in this browser only; it is not shared across devices. Google Sheets can be connected later.</p>
+    <div class="admin-metrics"><div class="metric"><span>Ticket capacity</span><strong id="metricCapacity">100</strong></div><div class="metric"><span>Seats allocated</span><strong id="metricAllocated">0</strong></div><div class="metric"><span>Confirmed teams</span><strong id="metricConfirmed">0</strong></div><div class="metric"><span>Waiting teams</span><strong id="metricWaiting">0</strong></div></div>
+    <div class="form-card" style="margin-bottom:18px"><div class="admin-top"><div><h3>Manage seat capacity</h3><p class="hint" style="margin:5px 0 0">Changing capacity may move teams between confirmed and waiting status.</p></div><div class="form-actions" style="margin:0"><input id="capacityInput" type="number" min="1" max="10000" value="100" style="width:110px;padding:10px;background:#090b0b;color:white;border:1px solid var(--line);border-radius:7px"><button class="btn small" id="saveCapacity">Update</button></div></div></div>
+    <div class="form-card"><h3 style="margin-bottom:15px">All registrations</h3><div class="table-wrap"><table><thead><tr><th>ID</th><th>Team</th><th>Leader</th><th>Members</th><th>Status</th><th>Action</th></tr></thead><tbody id="adminTable"></tbody></table></div></div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><div><span class="brand" style="font-size:15px"><span class="brand-mark" style="font-size:17px">⟨S⟩</span>SYNAPSE <b>2026</b></span><div style="margin-top:7px">Connecting Ideas. Igniting Leaders.</div></div><div class="footer-links"><a href="#about">About</a><a href="#event">Event</a><a href="#register">Register</a><a href="#contact">Contact</a></div><a class="admin-link" href="#admin">Admin demo</a></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+(() => {
+const $=id=>document.getElementById(id);
+const pages=['home','about','event','register','contact','confirmation','waiting','my-registration','admin'];
+const navLinks=[...document.querySelectorAll('[data-page]')];
+const DATA_KEY='synapse2026_local_registrations_v2', CAPACITY_KEY='synapse2026_local_capacity_v2';
+let capacity=Number(localStorage.getItem(CAPACITY_KEY))||100;
+let registrations=JSON.parse(localStorage.getItem(DATA_KEY)||'[]');
+let lastRegistrationId=null;
+function save(){localStorage.setItem(DATA_KEY,JSON.stringify(registrations));localStorage.setItem(CAPACITY_KEY,String(capacity))}
+function syncStatuses(){
+ registrations.sort((a,b)=>a.createdAt-b.createdAt||a.id.localeCompare(b.id));
+ let used=0, queueStarted=false;
+ for(const r of registrations){
+  if(r.status==='Cancelled')continue;
+  const canSeat=!queueStarted && used+r.size<=capacity;
+  r.status=canSeat?'Confirmed':'Waiting';
+  if(canSeat)used+=r.size;else queueStarted=true;
+ }
+ save();
+}
+function toast(msg,error=false){const el=$('toast');el.textContent=msg;el.className='toast show'+(error?' error':'');clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.className='toast',4500)}
+function go(page){if(!pages.includes(page))page='home';document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===page));navLinks.forEach(a=>a.classList.toggle('active',a.dataset.page===page));$('navlinks').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});if(page==='admin')renderAdmin();if(page==='waiting')renderWaiting(lastRegistrationId);if(page==='my-registration'&&lastRegistrationId){$('lookupId').value=lastRegistrationId;renderLookup(lastRegistrationId)}}
+function route(){go(location.hash.replace('#','')||'home')}
+window.addEventListener('hashchange',route);$('menuToggle').addEventListener('click',()=>$('navlinks').classList.toggle('open'));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const id=a.getAttribute('href').slice(1);if(pages.includes(id))setTimeout(()=>go(id),0)}));
+document.querySelectorAll('input[name="teamSize"]').forEach(r=>r.addEventListener('change',()=>{const three=document.querySelector('input[name="teamSize"]:checked').value==='3';$('member3Fields').classList.toggle('hidden',!three);$('member3Name').required=three;$('member3Roll').required=three;}));
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function statusPill(status){return `<span class="status-pill ${status==='Waiting'?'wait':''}">${esc(status)}</span>`}
+function queuePosition(id){const r=registrations.find(x=>x.id===id);return r?registrations.filter(x=>x.status==='Waiting'&&(x.createdAt<r.createdAt||(x.createdAt===r.createdAt&&x.id<=r.id))).length:0}
+function qrPayload(r){return JSON.stringify({event:'SYNAPSE 2026',registrationId:r.id,teamName:r.teamName,teamSize:r.size,status:r.status,teamLeader:r.leaderName,members:r.members.map(m=>({name:m.name,rollNumber:m.roll})),registeredAt:new Date(r.createdAt).toISOString()})}
+function renderQr(r){
+ const el=$('qr-'+r.id);if(!el)return;
+ const payload=qrPayload(r);
+ el.innerHTML='';
+ el.style.background='#fff';el.style.color='#111';el.style.width='134px';el.style.height='134px';el.style.padding='5px';el.style.boxSizing='border-box';
+ if(window.QRCode){
+   try {
+     new QRCode(el,{text:payload,width:124,height:124,colorDark:'#111111',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.L});
+     // QRCode.js can fail silently when its CDN or canvas implementation is unavailable.
+     setTimeout(()=>{
+       if(!el.querySelector('canvas, img, table')){
+         const img=document.createElement('img');
+         img.alt='SYNAPSE 2026 registration QR code';img.width=124;img.height=124;
+         img.src='https://api.qrserver.com/v1/create-qr-code/?size=180x180&data='+encodeURIComponent(payload);
+         img.onerror=()=>{el.innerHTML='<span style="display:block;padding:8px;font:11px/1.4 sans-serif;color:#111">QR generation failed. Connect to the internet and reload this registration ticket.</span>';};
+         el.innerHTML='';el.appendChild(img);
+       }
+     },500);
+   } catch(err) { qrFallback(el,payload); }
+ } else { qrFallback(el,payload); }
+}
+function qrFallback(el,payload){
+ const img=document.createElement('img');
+ img.alt='SYNAPSE 2026 registration QR code';img.width=124;img.height=124;
+ img.src='https://api.qrserver.com/v1/create-qr-code/?size=180x180&data='+encodeURIComponent(payload);
+ img.onerror=()=>{el.innerHTML='<span style="display:block;padding:8px;font:11px/1.4 sans-serif;color:#111">QR generation needs an internet connection. Reload this ticket while online.</span>';};
+ el.innerHTML='';el.appendChild(img);
+}
+function ticketMarkup(r){
+ const html=`<div class="ticket"><div class="ticket-brand">⟨S⟩ SYNAPSE <span>2026</span></div><div class="ticket-qr"><div id="qr-${esc(r.id)}" class="qr-code" aria-label="QR code for registration"></div><span>Scan to view participant details</span></div><div class="ticket-row"><div><small>Team name</small><strong>${esc(r.teamName)}</strong></div><div><small>Team size</small><strong>${r.size} members</strong></div></div><div class="ticket-row"><div><small>Team leader</small><strong>${esc(r.leaderName)}</strong></div><div><small>Registration ID</small><strong>${esc(r.id)}</strong></div></div><div class="ticket-row"><div><small>Status</small>${statusPill(r.status)}</div><div><small>Submitted</small><strong>${new Date(r.createdAt).toLocaleDateString()}</strong></div></div><p class="hint" style="margin:14px 0 0">${r.status==='Confirmed'?'Your ticket allocation is confirmed. Keep this registration ID for reference.':r.status==='Waiting'?'You are under the waiting list. Please wait for further notice. Your FIFO queue position is '+queuePosition(r.id)+'.':'This registration has been cancelled.'}</p><details style="margin-top:12px"><summary style="cursor:pointer;color:#a8adad;font-size:12px">Show QR data</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere;font-size:10px;color:#a8adad">${esc(qrPayload(r))}</pre></details></div>`;
+ setTimeout(()=>renderQr(r),0);
+ return html;
+}
+$('registrationForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const size=Number(document.querySelector('input[name="teamSize"]:checked').value);
+ const members=[{name:$('leaderName').value.trim(),roll:$('leaderRoll').value.trim()},{name:$('member2Name').value.trim(),roll:$('member2Roll').value.trim()}];
+ if(size===3)members.push({name:$('member3Name').value.trim(),roll:$('member3Roll').value.trim()});
+ const rolls=members.map(m=>m.roll.toLowerCase());
+ if(new Set(rolls).size!==rolls.length){toast('Each team member must have a different roll number.',true);return}
+ if(registrations.some(r=>r.status!=='Cancelled'&&r.members.some(m=>rolls.includes(m.roll.toLowerCase())))){toast('A roll number in this team is already registered.',true);return}
+ const id='SYN26-'+String(Date.now()).slice(-8)+'-'+Math.random().toString(36).slice(2,5).toUpperCase();
+ const r={id,teamName:$('teamName').value.trim(),size,leaderName:$('leaderName').value.trim(),leaderRoll:$('leaderRoll').value.trim(),leaderEmail:$('leaderEmail').value.trim(),leaderPhone:$('leaderPhone').value.trim(),members,status:'Waiting',createdAt:Date.now()};
+ registrations.push(r);syncStatuses();lastRegistrationId=id;
+ const updated=registrations.find(x=>x.id===id);
+ $('confirmationTitle').textContent=updated.status==='Confirmed'?'Registration successful!':'You are on the waiting list';
+ $('confirmationText').textContent=updated.status==='Confirmed'?'Your team has been allocated tickets for SYNAPSE 2026.':'All 100 tickets are currently allocated. Your team is on the waiting list. Please wait for further notice.';
+ $('confirmationContent').innerHTML=ticketMarkup(updated);
+ e.target.reset();$('member3Fields').classList.add('hidden');$('member3Name').required=false;$('member3Roll').required=false;
+ location.hash=updated.status==='Confirmed'?'confirmation':'waiting';
+ toast(updated.status==='Confirmed'?'Registration confirmed. QR code generated.':'Added to the FIFO waiting list. Please wait for further notice.');
+});
+function renderWaiting(id){
+ const r=registrations.find(x=>x.id===id)||registrations.find(x=>x.id===lastRegistrationId);
+ if(!r){$('waitingContent').innerHTML='<div class="empty-state"><div class="icon">⌕</div><h3>No registration selected</h3><p>Submit a registration or look up your registration ID.</p><a class="btn" href="#register">Register now</a></div>';return}
+ if(r.status!=='Waiting'){$('waitingContent').innerHTML=ticketMarkup(r);return}
+ const pos=queuePosition(r.id);
+ $('waitingContent').innerHTML=`<div class="grid"><div class="card"><div class="icon">⌛</div><h3>You are under the waiting list</h3><p>Team <strong>${esc(r.teamName)}</strong> is waiting for a ticket. <strong>Please wait for further notice.</strong></p><div class="queue-number">#${pos}</div><p>FIFO queue position</p><div class="progress"><span style="width:${Math.max(8,100*pos/Math.max(1,registrations.filter(x=>x.status==='Waiting').length))}%"></span></div><p class="hint">Teams are served in first-in, first-out order. The earliest waiting team is offered the next available ticket allocation.</p></div><div>${ticketMarkup(r)}<div class="form-actions"><button class="btn secondary" id="cancelWaiting">Cancel registration</button></div></div></div>`;
+ $('cancelWaiting').addEventListener('click',()=>cancelRegistration(r.id));
+}
+function renderLookup(id){
+ const r=registrations.find(x=>x.id.toLowerCase()===String(id||'').trim().toLowerCase());
+ $('lookupResult').innerHTML=r?`${ticketMarkup(r)}<div class="form-actions">${r.status!=='Cancelled'?`<button class="btn secondary" id="cancelFound">Cancel registration</button>`:''}</div>`:'<div class="empty-state"><h3>Registration not found</h3><p>Check the ID and try again in this browser.</p></div>';
+ const b=$('cancelFound');if(b)b.addEventListener('click',()=>cancelRegistration(r.id));
+}
+$('lookupForm').addEventListener('submit',e=>{e.preventDefault();renderLookup($('lookupId').value)});
+function cancelRegistration(id){
+ const r=registrations.find(x=>x.id===id);if(!r||r.status==='Cancelled')return;
+ if(!confirm(`Cancel registration for "${r.teamName}"? Available seats will be reallocated in FIFO order.`))return;
+ r.status='Cancelled';syncStatuses();toast('Registration cancelled. FIFO queue updated.');renderLookup(id);if(location.hash==='#waiting')renderWaiting(id);renderAdmin();
+}
+function renderAdmin(){
+ const confirmed=registrations.filter(r=>r.status==='Confirmed'),waiting=registrations.filter(r=>r.status==='Waiting');
+ $('metricCapacity').textContent=capacity;$('metricAllocated').textContent=registrations.filter(r=>r.status==='Confirmed').reduce((n,r)=>n+r.size,0)+' / '+capacity;$('metricConfirmed').textContent=confirmed.length;$('metricWaiting').textContent=waiting.length;$('capacityInput').value=capacity;
+ $('adminTable').innerHTML=registrations.length?registrations.map(r=>`<tr><td>${esc(r.id)}</td><td>${esc(r.teamName)}</td><td>${esc(r.leaderName)}</td><td>${r.size}</td><td>${statusPill(r.status)}</td><td>${r.status!=='Cancelled'?`<button class="btn secondary small" data-cancel="${esc(r.id)}">Cancel</button>`:'—'}</td></tr>`).join(''):'<tr><td colspan="6" class="table-empty">No registrations yet.</td></tr>';
+ $('adminTable').querySelectorAll('[data-cancel]').forEach(b=>b.addEventListener('click',()=>cancelRegistration(b.dataset.cancel)));
+}
+$('saveCapacity').addEventListener('click',()=>{const next=Number($('capacityInput').value);if(!Number.isInteger(next)||next<1){toast('Capacity must be a whole number above zero.',true);return}capacity=next;syncStatuses();renderAdmin();toast('Ticket capacity updated and FIFO queue reallocated.')});
+$('exportCsv').addEventListener('click',()=>{
+ const rows=[['Registration ID','Team','Size','Leader','Roll','Email','Phone','Members','Status','Created'],...registrations.map(r=>[r.id,r.teamName,r.size,r.leaderName,r.leaderRoll,r.leaderEmail,r.leaderPhone,r.members.map(m=>`${m.name} (${m.roll})`).join('; '),r.status,new Date(r.createdAt).toISOString()])];
+ const csv=rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='synapse-registrations.csv';a.click();URL.revokeObjectURL(a.href)
+});
+$('resetDemo').addEventListener('click',()=>{if(!confirm('Delete all local demo registrations and reset capacity to 100?'))return;registrations=[];capacity=100;save();renderAdmin();toast('Demo data reset.')});
+syncStatuses();route();
+})();
+</script>
+</body>
+</html>
